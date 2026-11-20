@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Konsultasi Herpes Zoster</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<header>
+     <h1>HERPES ZOSTER CARE</h1>
+    <h3>Kenali, Cegah, dan Tangani Herpes Zoster</h3>
+	</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="profil.html">Profil Penyakit</a>
+    <a href="gejala.html">Gejala Penyakit</a>
+    <a href="penyebab.html">Penyebab dan Penularan</a>
+    <a href="pencegahan.html">Pencegahan</a>
+    <a href="penanganan.html">Penanganan</a>
+    <a href="konsultasi.html">Konsultasi</a>
+    <a href="kontak.html">Kontak</a>
+</nav>
+
+<main>
+
+    <center>
+        <h2>FORMULIR KONSULTASI</h2>
+        <p>Silakan isi formulir di bawah ini.</p>
+    </center>
+
+    <form onsubmit="return validasiForm();">
+
+        <table cellpadding="10">
+
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>
+                    <input type="text" id="nama"
+                    placeholder="Masukkan nama">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" id="email"
+                    placeholder="Masukkan email">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Nomor Telepon</td>
+                <td>
+                    <input type="text" id="telepon"
+                    placeholder="Masukkan nomor telepon">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pesan Konsultasi</td>
+                <td>
+                    <textarea id="pesan" rows="5"
+                    cols="30"
+                    placeholder="Tuliskan pesan"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Kirim">
+                    <input type="reset" value="Hapus">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+    <div id="hasil"></div>
+
+</main>
+
+<footer>
+    <p>Website Informasi Kesehatan Herpes Zoster</p>
+	<p>@Anindia Putri</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

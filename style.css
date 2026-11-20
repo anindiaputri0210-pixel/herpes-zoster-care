@@ -1,0 +1,214 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #EDF5F5;
+    color: #333333;
+}
+
+/* BAGIAN JUDUL */
+header {
+    background: linear-gradient(120deg, #075B66, #16A6A6);
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 38px;
+    margin: 5px;
+}
+
+header p {
+    color: #E0FFFF;
+    font-size: 16px;
+}
+
+/* MENU NAVIGASI */
+nav {
+    background-color: #064E57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    background-color: #075B66;
+    text-decoration: none;
+    padding: 11px 17px;
+    font-size: 14px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #16A6A6;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* BAGIAN ISI HALAMAN */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    min-height: 300px;
+}
+
+h2 {
+    color: #087F8C;
+    font-size: 26px;
+}
+header h2 {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h3 {
+    color: #087F8C;
+}
+header h3 {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+/* PENGATURAN TULISAN */
+p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+li {
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+main img.gambar-menu {
+    width: 60% !important;
+    max-width: 700px !important;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+	/* TABEL */
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+}
+
+/* FORMULIR */
+form {
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+form table {
+    width: 100%;
+    background-color: #F1FAFA;
+    border-radius: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CCCCCC;
+    border-radius: 7px;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    background-color: #087F8C;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background-color: #064E57;
+}
+
+/* BAGIAN BAWAH */
+footer {
+    background-color: #064E57;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* TAMPILAN HP */
+@media screen and (max-width: 700px) {
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav a {
+        display: inline-block;
+        font-size: 13px;
+        padding: 10px 14px;
+    }
+
+    main {
+        width: 94%;
+        padding: 20px;
+        margin: 15px auto;
+    }
+
+    form table,
+    form tr,
+    form td {
+        display: block;
+        width: 100%;
+    }
+}
+    /* GAMBAR PADA HP */
+    .gambar-menu {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
